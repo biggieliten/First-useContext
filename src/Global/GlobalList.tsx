@@ -1,6 +1,6 @@
 import { GlobalContext } from "./GlobalContext";
 import { useContext } from "react";
-import { initialStudents } from "./StudentContext";
+import { initialStudents } from "../Student/StudentContext";
 
 export const GlobalList = () => {
   const global = useContext(GlobalContext);

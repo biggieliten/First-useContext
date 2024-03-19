@@ -1,14 +1,23 @@
-import { GlobalContext, intitialGlobal } from "./GlobalContext";
-import GlobalList from "./GlobalList";
+import { GlobalContext, intitialGlobal } from "./Global/GlobalContext";
+import SearchTeacher from "./Teacher/SearchTeacher";
+import { StudentList } from "./Student/StudentList";
+
+// import GlobalList from "./Global/GlobalList";
 
 import "./App.css";
+import { StudentContext, initialStudents } from "./Student/StudentContext";
 
 function App() {
   return (
     <>
       <GlobalContext.Provider value={[intitialGlobal]}>
-        <GlobalList />
+        <SearchTeacher />
+        {/* <GlobalList /> */}
       </GlobalContext.Provider>
+
+      <StudentContext.Provider value={initialStudents}>
+        <StudentList />
+      </StudentContext.Provider>
     </>
   );
 }

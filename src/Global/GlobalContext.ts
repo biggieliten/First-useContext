@@ -1,6 +1,6 @@
 import { createContext } from "react";
-import { initialStudents, Student } from "./StudentContext";
-import { initialTeachers, Teacher } from "./TeacherContext";
+import { initialStudents, Student } from "../Student/StudentContext";
+import { initialTeachers, Teacher } from "../Teacher/TeacherContext";
 
 import uuid from "react-uuid";
 
